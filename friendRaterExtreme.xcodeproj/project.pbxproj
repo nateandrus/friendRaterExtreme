@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		EDB1C8D221FCD43F00B7AAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB1C8D121FCD43F00B7AAD0 /* AppDelegate.swift */; };
-		EDB1C8D421FCD43F00B7AAD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB1C8D321FCD43F00B7AAD0 /* ViewController.swift */; };
 		EDB1C8D721FCD43F00B7AAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB1C8D521FCD43F00B7AAD0 /* Main.storyboard */; };
 		EDB1C8D921FCD44000B7AAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB1C8D821FCD44000B7AAD0 /* Assets.xcassets */; };
 		EDB1C8DC21FCD44000B7AAD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB1C8DA21FCD44000B7AAD0 /* LaunchScreen.storyboard */; };
+		EDB1C8E621FCD4EB00B7AAD0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB1C8E521FCD4EB00B7AAD0 /* Person.swift */; };
+		EDB1C8E921FCD69F00B7AAD0 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB1C8E821FCD69F00B7AAD0 /* PersonController.swift */; };
+		EDB1C8ED21FCD6F300B7AAD0 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB1C8EC21FCD6F300B7AAD0 /* Views.swift */; };
+		EDB1C8F021FCE0B500B7AAD0 /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB1C8EF21FCE0B500B7AAD0 /* Relationship.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EDB1C8CE21FCD43F00B7AAD0 /* friendRaterExtreme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = friendRaterExtreme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB1C8D121FCD43F00B7AAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDB1C8D321FCD43F00B7AAD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EDB1C8D621FCD43F00B7AAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDB1C8D821FCD44000B7AAD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDB1C8DB21FCD44000B7AAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDB1C8DD21FCD44000B7AAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB1C8E521FCD4EB00B7AAD0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EDB1C8E821FCD69F00B7AAD0 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		EDB1C8EC21FCD6F300B7AAD0 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		EDB1C8EF21FCE0B500B7AAD0 /* Relationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,65 @@
 		EDB1C8D021FCD43F00B7AAD0 /* friendRaterExtreme */ = {
 			isa = PBXGroup;
 			children = (
+				EDB1C8EE21FCD6F800B7AAD0 /* Views */,
+				EDB1C8E721FCD4EF00B7AAD0 /* Models */,
+				EDB1C8EA21FCD6A800B7AAD0 /* Controllers */,
+				EDB1C8E421FCD4A100B7AAD0 /* Storyboards */,
+				EDB1C8E321FCD48D00B7AAD0 /* Resources */,
+			);
+			path = friendRaterExtreme;
+			sourceTree = "<group>";
+		};
+		EDB1C8E321FCD48D00B7AAD0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				EDB1C8D121FCD43F00B7AAD0 /* AppDelegate.swift */,
-				EDB1C8D321FCD43F00B7AAD0 /* ViewController.swift */,
-				EDB1C8D521FCD43F00B7AAD0 /* Main.storyboard */,
 				EDB1C8D821FCD44000B7AAD0 /* Assets.xcassets */,
 				EDB1C8DA21FCD44000B7AAD0 /* LaunchScreen.storyboard */,
 				EDB1C8DD21FCD44000B7AAD0 /* Info.plist */,
 			);
-			path = friendRaterExtreme;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EDB1C8E421FCD4A100B7AAD0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EDB1C8D521FCD43F00B7AAD0 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EDB1C8E721FCD4EF00B7AAD0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDB1C8E521FCD4EB00B7AAD0 /* Person.swift */,
+				EDB1C8EF21FCE0B500B7AAD0 /* Relationship.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EDB1C8EA21FCD6A800B7AAD0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDB1C8EB21FCD6B400B7AAD0 /* ModelControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EDB1C8EB21FCD6B400B7AAD0 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDB1C8E821FCD69F00B7AAD0 /* PersonController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		EDB1C8EE21FCD6F800B7AAD0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDB1C8EC21FCD6F300B7AAD0 /* Views.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB1C8D421FCD43F00B7AAD0 /* ViewController.swift in Sources */,
+				EDB1C8F021FCE0B500B7AAD0 /* Relationship.swift in Sources */,
+				EDB1C8ED21FCD6F300B7AAD0 /* Views.swift in Sources */,
+				EDB1C8E621FCD4EB00B7AAD0 /* Person.swift in Sources */,
+				EDB1C8E921FCD69F00B7AAD0 /* PersonController.swift in Sources */,
 				EDB1C8D221FCD43F00B7AAD0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = friendRaterExtreme/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/friendRaterExtreme/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = friendRaterExtreme/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/friendRaterExtreme/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
